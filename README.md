@@ -2,6 +2,8 @@
 
 Training a variational autoencoder on the Fashion MNIST dataset.
 
+  ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
+
 ## How it works
 
 Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node. The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset.
