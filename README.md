@@ -5,16 +5,16 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ## How it works &#x1F49C;
 
-Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node. The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset.
-
-This example is a port of the code for a multilayer perceptron based variational
-autoencoder from this link https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py See [this tutorial](https://blog.keras.io/building-autoencoders-in-keras.html) for a description of how autoencoders work.
+* Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node.
+* The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
+* Multilayer perceptron based variational autoencoder from this link https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py 
 
 ## Autoencoders 
 
  ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/autoencoder.jpg)
  
-* Data compression algorithm where compression and decompression functions are defined for the user 
+* Data compression algorithm with compression and decompression functions
+* User defines the parameters in the function using variational autoencoder
 * Implemented using neural netowrks (especially useful for solving problems in unsupervised learning... but not every useful in a pragmatic sense.)
 
 ## Label Description &#x1F538;:
