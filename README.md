@@ -13,7 +13,21 @@ Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-i
 This example is a port of the code for a multilayer perceptron based variational
 autoencoder from this link https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py See [this tutorial](https://blog.keras.io/building-autoencoders-in-keras.html) for a description of how autoencoders work.
 
-## Prepare the node environment &#x1F538; :
+## Label Description &#x1F538;:
+
+Labels for each training set.
+* 0	T-shirt/top
+* 1	Trouser
+* 2	Pullover
+* 3	Dress
+* 4	Coat
+* 5	Sandal
+* 6	Shirt
+* 7	Sneaker
+* 8	Bag
+* 9	Ankle boot
+
+## Prepare the node environment &#x1F538;:
 
 ```sh
 yarn
@@ -69,3 +83,10 @@ yarn watch
 ```
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/fashion-mnist-vae-scr.png)
+
+## References &#x1F49C;
+* [Tensorflow's tutorial with tf.keras, a high-level API to train Fashion MNIST] https://www.tensorflow.org/tutorials/keras/basic_classification
+* [Zaiando Research Fashion MNIST data] http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/
+* [Google Scholar - Publications on Fashion MNIST data sets] https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas
+* [Kaggle Data Science competitions with fahsion data set] https://www.kaggle.com/zalando-research/fashionmnist
+* Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
