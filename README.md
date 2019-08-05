@@ -20,16 +20,16 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 ## Label Description &#x1F538;:
 
 Labels for each training set.
-* 0	T-shirt/top
-* 1	Trouser
-* 2	Pullover
-* 3	Dress
-* 4	Coat
-* 5	Sandal
-* 6	Shirt
-* 7	Sneaker
-* 8	Bag
-* 9	Ankle boot
+0.	T-shirt/top
+1.	Trouser
+2.	Pullover
+3.	Dress
+4.	Coat
+5.	Sandal
+6.	Shirt
+7.	Sneaker
+8.	Bag
+9.	Ankle boot
 
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
 
