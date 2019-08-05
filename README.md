@@ -18,10 +18,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 * User defines the parameters in the function using variational autoencoder
 * Implemented using **neural networks** (especially useful for solving problems in unsupervised learning... but not every useful in a pragmatic sense.)
 
-## Label Description &#x1F538;:
-
-Labels for each training set.
-
+## Label Descriptions  &#x1F538;
 0.	T-shirt/top
 1.	Trouser
 2.	Pullover
@@ -34,7 +31,6 @@ Labels for each training set.
 9.	Ankle boot
 
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
-
 
 ## Prepare the node environment &#x1F538;:
 
@@ -98,6 +94,5 @@ yarn watch
 * [Zaiando Research Fashion MNIST data] http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/
 * [Google Scholar - Publications on Fashion MNIST data sets] https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas
 * [Building Autoencoders in Keras using DL for Python] https://blog.keras.io/building-autoencoders-in-keras.html
-*
 * [Kaggle Data Science competitions with fahsion data set] https://www.kaggle.com/zalando-research/fashionmnist
 * Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
