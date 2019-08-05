@@ -16,7 +16,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
  
 * **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
-* Implemented using **neural networks** (especially useful for solving problems in unsupervised learning... but not every useful in a pragmatic sense.)
+* Implemented using **neural networks** - useful for problems in unsupervised learning
 
 ## Label Descriptions  &#x1F538;
 0.	T-shirt/top
