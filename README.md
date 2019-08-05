@@ -5,21 +5,23 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ## How it works &#x1F49C;
 
-* Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node.
+* Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
-* Multilayer perceptron based variational autoencoder from this link https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py 
+* Multilayer perceptron based variational autoencoder from [this link](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py )
+
 
 ## Autoencoders 
 
  ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/autoencoder.jpg)
  
-* Data compression algorithm with compression and decompression functions
+* **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
-* Implemented using neural netowrks (especially useful for solving problems in unsupervised learning... but not every useful in a pragmatic sense.)
+* Implemented using **neural networks** (especially useful for solving problems in unsupervised learning... but not every useful in a pragmatic sense.)
 
 ## Label Description &#x1F538;:
 
 Labels for each training set.
+
 0.	T-shirt/top
 1.	Trouser
 2.	Pullover
