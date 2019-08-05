@@ -7,7 +7,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 * Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
-* Multilayer perceptron based variational autoencoder from [this link](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py )
+* Multilayer perceptron based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py )
 
 
 ## Autoencoders 
