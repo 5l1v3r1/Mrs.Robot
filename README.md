@@ -9,7 +9,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 * Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
-* Multilayer perceptron based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py )
+* **Multi-layer perceptron** based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py )
 
 
 ## Autoencoders 
@@ -64,8 +64,7 @@ yarn train
 
 ### Monitoring model training with TensorBoard &#x1F49C;
 
-By using the `--logDir` flag of the `yarn train` command, you can log the
-batch-by-batch loss values to a log directory.
+Use `--logDir` flag of `yarn train` command, you can log the **batch-by-batch loss values** to a log directory.
 
 For example:
 
@@ -73,7 +72,7 @@ For example:
 yarn train --logDir /tmp/vae_logs
 ```
 
-Start TensorBoard  in a separate terminal:
+Start TensorBoard in a separate terminal:
 
 ```sh
 pip install tensorboard  # Unless you've already installed tensorboard.
@@ -82,7 +81,7 @@ pip install tensorboard  # Unless you've already installed tensorboard.
 tensorboard --logdir /tmp/vae_logs
 ```
 
-Once started, the tensorboard process will print an http:// URL to the console. Open in browser and see the loss curve:
+Tensorboard process will print an http:// URL to the console. Open URL in browser and see the **loss curve**:
 ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/vae_tensorboard.png)
 
 (Image of loss curve from fashion model training)
@@ -97,7 +96,7 @@ yarn watch
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/fashion-mnist-vae-scr.png)
 
-(Image of completed training results on fashion MNIST via 30x30 grid of small images)
+(Image of completed training results on fashion MNIST 30x30 grid of small images)
 
 ## References &#x1F49C;
 * [Tensorflow's tutorial with tf.keras, a high-level API to train Fashion MNIST] https://www.tensorflow.org/tutorials/keras/basic_classification
