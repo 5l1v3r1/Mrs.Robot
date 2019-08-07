@@ -2,7 +2,8 @@
 
 Training a **variational autoencoder** on the Fashion MNIST dataset.
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/gender%20bias%20%20.png)
-  (Image of Google Search's auto suggestions when user types in "How to get my daughter into...")
+
+(Image of Google Search's auto suggestions when user types in "How to get my daughter into...")
 
 ## How it works &#x1F49C;
 
@@ -14,7 +15,8 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 ## Autoencoders 
 
  ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/autoencoder.jpg)
-  (Image of how autoencoders work using the MNIST data set with the number "2")
+
+(Image of how autoencoders work using the MNIST data set with the number "2")
  
 * **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
