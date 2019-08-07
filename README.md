@@ -35,6 +35,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 9.	Ankle boot
 
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
+  (Image of the 0 to 9 label descriptions for the Fashion MNIST dataset)
 
 ## Prepare the node environment &#x1F538;:
 
