@@ -96,6 +96,7 @@ yarn watch
 ```
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/fashion-mnist-vae-scr.png)
+
 (Image of completed training results on fashion MNIST via 30x30 grid of small images)
 
 ## References &#x1F49C;
