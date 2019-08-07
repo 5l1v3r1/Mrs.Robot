@@ -33,10 +33,8 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 7.	Sneaker
 8.	Bag
 9.	Ankle boot
-
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
   (Image of the 0 to 9 label descriptions for the Fashion MNIST dataset)
-
 ## Prepare the node environment &#x1F538;:
 
 ```sh
@@ -59,10 +57,8 @@ yarn train
 ```
 
 * Model is saved after the end of training
-* Fashion data file is large, we can't feed all the data to the model at once due to limitations in computer memory 
-* Data is split into **"batches"** which can fit into computer memory at once
-* When all batches are fed exactly once, we complete an "epoch"
-* * As training script runs, **preview images afer every epoch** will show. At the end of each epoch the preview image should look more and more like an item of clothing. 
+* Fashion data file is large, we can't feed all the data to the model at once due to limitations in computer memory. Data is split into **"batches"** which can fit into computer memory at once
+* When all batches are fed exactly once, we complete an "epoch". As training script runs, **preview images afer every epoch** will show. At the end of each epoch the preview image should look more and more like an item of clothing. 
 * **Loss function accounts for error**. The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero.
 
 
@@ -86,11 +82,10 @@ pip install tensorboard  # Unless you've already installed tensorboard.
 tensorboard --logdir /tmp/vae_logs
 ```
 
-Once started, the tensorboard process will print an http:// URL to the
-console. 
-
-You can open it in the browser and see the loss curve:
+Once started, the tensorboard process will print an http:// URL to the console. Open in browser and see the loss curve:
 ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/vae_tensorboard.png)
+
+(Image of loss curve from fashion model training)
 
 ## Serve the model and view the results &#x1F49C;
 
@@ -101,6 +96,7 @@ yarn watch
 ```
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/fashion-mnist-vae-scr.png)
+(Image of completed training results on fashion MNIST via 30x30 grid of small images)
 
 ## References &#x1F49C;
 * [Tensorflow's tutorial with tf.keras, a high-level API to train Fashion MNIST] https://www.tensorflow.org/tutorials/keras/basic_classification
