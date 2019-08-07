@@ -45,24 +45,32 @@ yarn
 npm install
 ```
 
-## Download the data &#x1F49C;
+## Download the fashion data &#x1F49C;
 
-Download the [train-images-idx3-ubyte.gz](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz) from [this page](https://github.com/zalandoresearch/fashion-mnist#get-the-data).
+* Download the fashion dataset [train-images-idx3-ubyte.gz](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz) from [this page](https://github.com/zalandoresearch/fashion-mnist#get-the-data).
 
-Uncompress the file and put the resulting `train-images-idx3-ubyte`. Into a folder called `dataset` within this example folder.
+* Dataset has **60,000 fashion training set images** 
+* Large file size (26 MBytes) so you will need to uncompress the file
+* Move the uncompressed file `train-images-idx3-ubyte` into `dataset` folder in the example folder of this repo
 
 ## Run the training script &#x1F538;: 
 ```sh
 yarn train
 ```
 
-It will display a preview image after every epoch and will save the model at the end of training. At the end of each epoch the preview image should look more and more like an item of clothing. The way the loss function is written the loss at the end of a good training run will be in the 40-50 range (as opposed to more typical case of being close to zero).
+* Model is saved after the end of training
+* Fashion data file is large, we can't feed all the data to the model at once due to limitations in computer memory 
+* Data is split into **"batches"** which can fit into computer memory at once
+* When all batches are fed exactly once, we complete an "epoch"
+* * As training script runs, **preview images afer every epoch** will show. At the end of each epoch the preview image should look more and more like an item of clothing. 
+* **Loss function accounts for error**. The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero.
 
 
 ### Monitoring model training with TensorBoard &#x1F49C;
 
 By using the `--logDir` flag of the `yarn train` command, you can log the
 batch-by-batch loss values to a log directory.
+
 For example:
 
 ```sh
@@ -79,9 +87,9 @@ tensorboard --logdir /tmp/vae_logs
 ```
 
 Once started, the tensorboard process will print an http:// URL to the
-console. You can open it in the browser and see the loss curve, e.g, see
-the example below.
+console. 
 
+You can open it in the browser and see the loss curve:
 ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/vae_tensorboard.png)
 
 ## Serve the model and view the results &#x1F49C;
