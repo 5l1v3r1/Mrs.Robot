@@ -3,8 +3,8 @@
 <div align="center">
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/pulls)
+  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/Mrs.Robot.svg)](https://github.com/lucylow/Mrs.Robot/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/Mrs.Robot.svg)](https://github.com/lucylow/Mrs.Robot/pulls)
   [![License](https://img.shields.io/bower/l/bootstrap)]()
 
 </div>
