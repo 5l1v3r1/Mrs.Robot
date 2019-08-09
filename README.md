@@ -9,6 +9,7 @@
 
 </div>
 
+
 Training a **variational autoencoder** on the Fashion MNIST dataset.
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/gender%20bias%20%20.png)
 
