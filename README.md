@@ -1,6 +1,6 @@
 # Mrs.Robot Fashion Modelling &#x1F49C;
 
-<div align="center">
+<div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
   [![GitHub Issues](https://img.shields.io/github/issues/lucylow/Mrs.Robot.svg)](https://github.com/lucylow/Mrs.Robot/issues)
