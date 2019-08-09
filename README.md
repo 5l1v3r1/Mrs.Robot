@@ -1,5 +1,14 @@
 # Mrs.Robot Fashion Modelling &#x1F49C;
 
+<div align="center">
+  
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]()
+  [![GitHub Issues](https://img.shields.io/github/issues/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/lucylow/en_francais_si_vous_plait.svg)](https://github.com/lucylow/en_francais_si_vous_plait/pulls)
+  [![License](https://img.shields.io/bower/l/bootstrap)]()
+
+</div>
+
 Training a **variational autoencoder** on the Fashion MNIST dataset.
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/gender%20bias%20%20.png)
 
