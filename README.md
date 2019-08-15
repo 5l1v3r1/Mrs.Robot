@@ -60,6 +60,8 @@
 * [Refer to Keras tutorial for variational autoenconder (MNIST digits)](https://blog.keras.io/building-autoencoders-in-keras.html) except we will be using Fashion data instead :)
 
   ![Spark Joy!!!](https://github.com/lucylow/Mrs.Robot/blob/master/images/marie_kondo.jpg)
+  
+  *Image. Marie Kondo sparking joy with the wonders of variational autoencoders.*
 
 
 ---
