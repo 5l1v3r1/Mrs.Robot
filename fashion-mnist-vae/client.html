@@ -1,17 +1,3 @@
-<!--
-Copyright 2018 Google LLC. All Rights Reserved.
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-==============================================================================
--->
-
 <html>
 
 <head>
@@ -39,32 +25,44 @@ limitations under the License.
       max-width: 80px;
     }
   </style>
+  
 </head>
 
 <body>
   <div class='tfjs-example-container centered-container'>
     <section class='title-area'>
-      <h1>TensorFlow.js: Variational AutoEncoder (VAE)</h1>
-      <p class='subtitle'>Train a VAE model to generate images.</p>
+      <h1>MRS.ROBOT (VAE)</h1>
+      <p class='subtitle'>Training a Variational Autoenconder on Fashion MNIST dataset.</p>
     </section>
     <section>
       <p class='section-head'>Description</p>
       <p>
-        This example trains a
+        Trains a
         <a href="https://blog.keras.io/building-autoencoders-in-keras.html">
           variational autoencoder</a>
         to generate images that resemble those found in the <a href="https://github.com/zalandoresearch/fashion-mnist">
-          fashion MNIST</a> dataset.
+          fashion MNIST</a> dataset. For detailed instructions read the <a href="https://github.com/lucylow/Mrs.Robot">
+          fashion MNIST</a>.
+     Mrs.Robot repo.
+      </p>
+      <p>
+        The 0 to 9 label descriptions for the Fashion MNIST dataset:
+        0.	T-shirt/top
+        1.	Trouser
+        2.	Pullover
+        3.	Dress
+        4.	Coat
+        5.	Sandal
+        6.	Shirt
+        7.	Sneaker
+        8.	Bag
+        9.	Ankle boot
       </p>
 
       <p>
-        This example trains the model in Node.js. See README.md for instructions. This page
-        contains a viewer for the trained model.
+        Trains the model in Node.js environment. Use "yarn" or "npm install". The page contains a viewer for the trained model.
       </p>
 
-      <p>
-        This examples assumes that the latest space of the autoencoder is 2d.
-      </p>
 
     </section>
 
@@ -72,9 +70,7 @@ limitations under the License.
       <section>
         <p class='section-head'>Instructions</p>
         <p>
-          You can adjust the number of images in the grid as well as the start and end
-          values used to generate each image. Experiment with them see the range of what
-          the autoencoder can generate.
+          User defines the parameters in the function using variational autoencoder. User can adjust the number of images in grid, and the start and end values used to generate each image:
         </p>
       </section>
 
