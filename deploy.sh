@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
-
-# =============================================================================
-
 # Deployment script with two options:
 # 1) Can be used to deploy ALL demos --> ./deploy.sh
 # 2) Pass single argument for single demo deployment --> ./deploy.sh fashion-mnist
-#
 #  - `yarn build` script generates a dist/ folder in the repo directory
 
 if [ -z "$1" ]
