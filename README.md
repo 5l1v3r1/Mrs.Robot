@@ -72,7 +72,7 @@ Example of **encoder network maping inputs to latent vectors**:
 
 * Input samples x into two parameters in latent space = **z_mean and z_log_sigma** 
 * Randomly sample points z from latent normal distribution to generate data
-* z = z_mean + exp(z_log_sigma) * epsilon, where epsilon is a **random normal tensor**. 
+* z = z_mean + exp(z_log_sigma) * epsilon, where epsilon is a **random normal tensor**
 * **Decoder network maps latent space** points back to the original input data
 
 ```python
