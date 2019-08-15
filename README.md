@@ -1,6 +1,6 @@
 # Mrs.Robot Fashion Modelling &#x1F49C;
 
-**Training a variational autoencoder on the Fashion MNIST dataset**
+**＊ ✿ ❀ Training a variational autoencoder on the Fashion MNIST dataset ❀ ✿ ＊**
 
 <div>
   
@@ -30,7 +30,7 @@
 
 ## How_it_works &#x1F49C;
 
-* Train a variational autoenconder (VAE) using TensorFlow.js on Node
+* **Train a variational autoenconder (VAE) using TensorFlow.js on Node**
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
 
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
@@ -93,7 +93,7 @@ Example of **encoder network maping inputs to latent vectors**:
 
 ## Label_descriptions &#x1F49C;
 
-Mrs.Robot has the following fashion pieces in her wardrobe:
+**Mrs.Robot has the following fashion pieces in her wardrobe:**
 
 0.	T-shirt/top
 1.	Trouser
