@@ -1,7 +1,5 @@
 # Mrs.Robot Fashion Modelling &#x1F49C;
 
----
-
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -17,19 +15,19 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ## Table_of_Contents &#x1F49C;
 
-* [How it works](#game-)
+* [How it works](#How it works-)
 * [Autoencoders](#Autoencoders-)
-* [Autoencoders](#Autoencoders-)
-* [Download the fashion data](#Download the fashion data-)
-* [Run the training script](#Run the training script-) 
-* [Loss error function](#Loss error function-)
-* [TensorBoard monitoring model training](#TensorBoard monitoring model training-)
-* [Serve the model and view the results](#Serve the model and view the results-)
+* [Label descriptions](#Label_descriptions-)
+* [Download the fashion data](#Download_the_fashion_data-)
+* [Run the training script](#Run_the_training_script-) 
+* [Loss error function](#Loss_error_function-)
+* [TensorBoard monitoring model training](#TensorBoard_monitoring_model_training-)
+* [Serve the model and view the results](#Serve_the_model_and_view_the_results-)
 * [References](#references-) 
 
 ---
 
-## How it works &#x1F49C;
+## How_it_works &#x1F49C;
 
 * Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
@@ -54,7 +52,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ---
 
-## Label descriptions &#x1F538;
+## Label_descriptions &#x1F538;
 
 0.	T-shirt/top
 1.	Trouser
@@ -73,7 +71,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
   
 ---
   
-## Prepare the node environment &#x1F538;
+## Prepare_the_node_environment &#x1F538;
 
 ```sh
 yarn
@@ -83,7 +81,7 @@ npm install
 
 ---
 
-## Download the fashion data &#x1F49C;
+## Download_the_fashion_data &#x1F49C;
 
 * Download the fashion dataset with over 60,000 fashion training set images [train-images-idx3-ubyte.gz](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz) from [here](https://github.com/zalandoresearch/fashion-mnist#get-the-data)
 * Large file size (26 MBytes) - will need to uncompress file
@@ -91,7 +89,7 @@ npm install
 
 ---
 
-## Run the training script &#x1F538;
+## Run_the_training_script &#x1F538;
 
 ```sh
 yarn train
@@ -103,7 +101,7 @@ yarn train
 
 ---
 
-## Loss error function &#x1F538;
+## Loss_error_function &#x1F538;
 
 * **Loss function accounts for error**. 
 * The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero.
@@ -115,7 +113,7 @@ yarn train
 
 ---
 
-### TensorBoard monitoring model training &#x1F49C;
+### TensorBoard_monitoring_model_training &#x1F49C;
 
 Use `--logDir` flag of `yarn train` command. Log the **batch-by-batch loss values** to a log directory.
 
@@ -139,7 +137,7 @@ Tensorboard process will print an http:// URL to the console and can be monitore
 
 ---
 
-## Serve the model and view the results &#x1F49C;
+## Serve_the_model_and_view_the_results &#x1F49C;
 
 Once the training is complete run to serve the model and the web page that goes with it.
 
