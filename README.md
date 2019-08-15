@@ -13,23 +13,18 @@
 
 Training a **variational autoencoder** on the Fashion MNIST dataset.
 
-
-  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/gender%20bias%20%20.png)
-
-*Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**"*
-
 ---
 
 ## Table_of_Contents &#x1F49C;
 
-* [Game](#game-)
-* [Definitions](#definitions-)
-* [Screenshot of Game](#screenshot_of_game-)
-* [Categories](#categories_config-in-bingooptions-)
-* [Bingo Examples](#bingo_examples-) 
-* [Technical How it works](#technical_how_it_works-)
-* [Technical Facebook Developer Product Integration](#technical_facebook_developer_product_integration-)
-* [Technical User Privacy Considerations](#technical_user_privacy_considerations-)
+* [How it works](#game-)
+* [Autoencoders](#Autoencoders-)
+* [Autoencoders](#Autoencoders-)
+* [Download the fashion data](#Download the fashion data-)
+* [Run the training script](#Run the training script-) 
+* [Loss error function](#Loss error function-)
+* [TensorBoard monitoring model training](#TensorBoard monitoring model training-)
+* [Serve the model and view the results](#Serve the model and view the results-)
 * [References](#references-) 
 
 ---
@@ -38,7 +33,11 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 * Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
-* **Multi-layer perceptron** based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py )
+* **Multi-layer perceptron** based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py)
+
+  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/gender%20bias%20%20.png)
+
+*Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**"*
 
 ---
 
@@ -55,7 +54,8 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ---
 
-## Label Descriptions  &#x1F538;
+## Label descriptions &#x1F538;
+
 0.	T-shirt/top
 1.	Trouser
 2.	Pullover
@@ -66,6 +66,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 7.	Sneaker
 8.	Bag
 9.	Ankle boot
+
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
   
   *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
@@ -91,6 +92,7 @@ npm install
 ---
 
 ## Run the training script &#x1F538;
+
 ```sh
 yarn train
 ```
@@ -101,7 +103,7 @@ yarn train
 
 ---
 
-## Loss Error Function &#x1F538;
+## Loss error function &#x1F538;
 
 * **Loss function accounts for error**. 
 * The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero.
