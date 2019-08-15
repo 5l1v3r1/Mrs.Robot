@@ -50,6 +50,7 @@ function encoder(opts) {
  *    sample epsilon = N(0,I)
  *    z = z_mean + sqrt(var) * epsilon
  */
+
 class ZLayer extends tf.layers.Layer {
   constructor(config) {
     super(config);
@@ -70,6 +71,7 @@ class ZLayer extends tf.layers.Layer {
    *     z_mean + sqrt(exp(z_log_var)) * epsilon, where epsilon is a random
    *     vector that follows the unit normal distribution (N(0, I)).
    */
+  
   call(inputs, kwargs) {
     const [zMean, zLogVar] = inputs;
     const batch = zMean.shape[0];
@@ -99,6 +101,7 @@ tf.serialization.registerClass(ZLayer);
  *                                      of the encoder
  * @param {number} opts.latentDim number of dimensions in latent space
  */
+
 function decoder(opts) {
   const {originalDim, intermediateDim, latentDim} = opts;
 
@@ -154,6 +157,7 @@ function vae(encoder, decoder) {
  *     ...encoderOutputs]
  * @param {number} vaeOpts.originalDim number of dimensions in the original data
  */
+
 function vaeLoss(inputs, outputs) {
   return tf.tidy(() => {
     const originalDim = inputs.shape[1];
