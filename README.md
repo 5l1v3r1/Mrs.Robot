@@ -55,20 +55,22 @@
 
 ## Variational Autoencoders (VAE) &#x1F49C;
 
-* Variational autoencoders are autoencoders with more added constraints
+* Variational autoencoders are autoencoders, but with more constraints
 * **Generative model** with parameters of a probability distribution modeling the data
-* The encoder, decoder and VAE are 3 models that share weights. After training the VAE model, **the encoder can be used to generate latent vectors**.
-* [Project follows the **Keras tutorial for variational autoenconder (VAE) ** for MNIST digits](https://blog.keras.io/building-autoencoders-in-keras.html) except we will be using Fashion MNIST data
+* The encoder, decoder, and VAE are 3 models that share weights. After training the VAE model, **the encoder can be used to generate latent vectors**.
+* [Refer to Keras tutorial for variational autoenconder (MNIST digits)](https://blog.keras.io/building-autoencoders-in-keras.html) except we will be using Fashion data instead :)
 
 * Example of **encoder network maping inputs to latent vectors**:
 
 ```python
 
  x = Input(batch_shape=(batch_size, original_dim))
- h = Dense(intermediate_dim, activation='relu')(x)
- z_mean = Dense(latent_dim)(h)
- z_log_sigma = Dense(latent_dim)(h)
  
+ h = Dense(intermediate_dim, activation='relu')(x)
+ 
+ z_mean = Dense(latent_dim)(h)
+ 
+ z_log_sigma = Dense(latent_dim)(h)
 ```
 
 ---
