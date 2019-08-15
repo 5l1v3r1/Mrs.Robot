@@ -1,7 +1,6 @@
-/**
- * Execute all unit tests in the current directory. Takes a jasmine_util from
- * tfjs-core so that we use the tfjs-core module from the right test directory.
- */
+// Execute all unit tests in the current directory. Takes a jasmine_util from
+// tfjs-core so that we use the tfjs-core module from the right test directory.
+
 function runTests(jasmineUtil, specFiles) {
   // tslint:disable-next-line:no-require-imports
   const jasmineConstructor = require('jasmine');
