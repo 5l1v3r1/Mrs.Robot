@@ -69,7 +69,7 @@
 
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/images/mnist%20labels.png)
   
-  *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
+    *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
   
 ---
   
@@ -108,9 +108,9 @@ yarn train
 * Loss function to account for error in training
 * The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero
 
-![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard.png)
+  ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard.png)
 
-  *Image of loss curve from fashion model training*
+    *Image of loss curve from fashion model training*
 
 
 ---
