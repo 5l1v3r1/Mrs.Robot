@@ -34,7 +34,7 @@
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
 * **Multi-layer perceptron** based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py)
 
-  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/google_search.png)
+  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
 
   *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**"*
 
@@ -42,7 +42,7 @@
 
 ## Autoencoders &#x1F49C;
 
- ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/autoencoder.jpg)
+ ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/images/autoencoder.jpg)
 
   *Image. How autoencoders work using the MNIST data set with the number "2"*
  
@@ -67,7 +67,7 @@
 9.	Ankle boot
 
 
-  ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/mnist%20labels.png)
+  ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/images/mnist%20labels.png)
   
   *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
   
@@ -108,7 +108,7 @@ yarn train
 * Loss function to account for error in training
 * The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero
 
-![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/vae_tensorboard.png)
+![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard.png)
 
   *Image of loss curve from fashion model training*
 
@@ -142,7 +142,7 @@ Once training is complete - run to serve the model and the web page that goes wi
 yarn watch
 ```
 
-![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/fashion-mnist-vae-scr.png)
+![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/images/fashion-mnist-vae-scr.png)
 
   *Image of completed training results on fashion MNIST 30x30 grid of small images*
 
