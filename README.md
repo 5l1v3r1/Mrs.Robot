@@ -30,9 +30,8 @@
 
 ## How_it_works &#x1F49C;
 
-* Train a [variational autoenconder](https://blog.keras.io/building-autoencoders-in-keras.html) using TensorFlow.js on Node
+* Train a variational autoenconder (VAE) using TensorFlow.js on Node
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
-* **Multi-layer perceptron** based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py)
 
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
 
@@ -48,7 +47,7 @@
 
 * "Audoencoding" == **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
-* Self-supervised Learning. A specific instance of supervised learning where target models are generated from input data
+* Self-supervised learning where target models are generated from input data
 * Implemented with **neural networks** - useful for problems in unsupervised learning (no labels)
 
 ---
@@ -60,7 +59,16 @@
 * The encoder, decoder, and VAE are 3 models that share weights. After training the VAE model, **the encoder can be used to generate latent vectors**.
 * [Refer to Keras tutorial for variational autoenconder (MNIST digits)](https://blog.keras.io/building-autoencoders-in-keras.html) except we will be using Fashion data instead :)
 
-* Example of **encoder network maping inputs to latent vectors**:
+---
+
+## Variational Autoencoder (VAE) Example &#x1F49C:
+
+Example of **encoder network maping inputs to latent vectors**:
+
+* Input samples x into two parameters in latent space = **z_mean and z_log_sigma** 
+* Randomly sample points z from latent normal distribution to generate data
+* z = z_mean + exp(z_log_sigma) * epsilon, where epsilon is a **random normal tensor**. 
+* **Decoder network maps latent space** points back to the original input data
 
 ```python
 
@@ -72,10 +80,15 @@
  
  z_log_sigma = Dense(latent_dim)(h)
 ```
+*Sample Code for VAE encoder network.*
+
 
 ---
 
+
 ## Label_descriptions &#x1F49C;
+
+Mrs.Robot has the following fashion pieces in her wardrobe:
 
 0.	T-shirt/top
 1.	Trouser
@@ -107,17 +120,17 @@ npm install
 
 ## Download_the_fashion_data &#x1F49C;
 
-* Download the fashion dataset with over 60,000 fashion training set images [train-images-idx3-ubyte.gz](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz) from [here](https://github.com/zalandoresearch/fashion-mnist#get-the-data)
-* Large file size (26 MBytes) - will need to uncompress file
+* Download **Mrs.Robot's fashion dataset with over 60,000 fashion training set images** [train-images-idx3-ubyte.gz](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz) from [here](https://github.com/zalandoresearch/fashion-mnist#get-the-data)
+* Uncompress the large file size (26 MBytes)
 * Move the uncompressed file `train-images-idx3-ubyte` into `dataset` folder in the example folder of this repo
 
 ---
 
 ## Run_the_training_script &#x1F49C;
 
-* Fashion data file is large, can't feed all the data to the model at once due to computer memory limitations. **Data is split into "batches"** 
+* Can not feed all the data to the model at once due to computer memory limitations so **data is split into "batches"** 
 * When all batches are fed exactly once, an "epoch" is completed. As training script runs, **preview images afer every epoch will show**
-* At the end of each epoch the preview image should look more and more like an item of clothing
+* At the end of each epoch the preview image should look more and more like an item of clothing for Mrs.Robot
 
 ```sh
 yarn train
@@ -127,6 +140,7 @@ yarn train
 
 ## Loss_error_function &#x1F49C;
 
+* Mrs.Robot is super picky about her fashion pieces 
 * Loss function to account for error in training
 * The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero
 
@@ -145,7 +159,7 @@ Use `--logDir` flag of `yarn train` command. Log the **batch-by-batch loss value
 yarn train --logDir /tmp/vae_logs
 ```
 
-Start TensorBoard in a separate terminal. Tensorboard process will print an http:// URL to the console and can be monitored in the browser. 
+Start TensorBoard in a separate terminal to  print an **http:// URL to the console**. The training process can then be **monitored in the browser by Mrs.Robot:**
 
 ```sh
 pip install tensorboard  # Unless you've already installed tensorboard.
@@ -158,11 +172,15 @@ tensorboard --logdir /tmp/vae_logs
 
 ## Serve_the_model_and_view_the_results &#x1F49C;
 
-Once training is complete - run to serve the model and the web page that goes with it.
+Once training is complete. Run to serve the model and the training web page.
 
 ```sh
 yarn watch
 ```
+
+VAE is a generative model which means it can be used to **generate new fashion pieces for Mrs.Robot**. Here we will scan the latent plane, sampling latent points at regular intervals, and generate the corresponding fashion piece for each point. 
+
+Refer to image below for a visualization of the **latent manifold that was "generated"**:
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/images/fashion-mnist-vae-scr.png)
 
