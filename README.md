@@ -45,10 +45,26 @@
  ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/images/autoencoder.jpg)
 
   *Image. How autoencoders work using the MNIST data set with the number "2"*
- 
-* **Data compression algorithm** with compression and decompression functions
+
+* "Audoencoding" == **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
-* Implemented using **neural networks** - useful for problems in unsupervised learning
+* Self-supervised Learning. A specific instance of supervised learning where target models are generated from input data
+* Implemented with **neural networks** - useful for problems in unsupervised learning (no labels)
+
+---
+
+## Variational Autoencoders (VAE) &#x1F49C;
+
+* Variational autoencoders are autoencoders with more added constraints
+* **Generative model** with parameters of a probability distribution modeling the data
+* The encoder, decoder and VAE are 3 models that share weights. After training the VAE model, **the encoder can be used to generate latent vectors**.
+* [Project follows the **Keras tutorial for variational autoenconder (VAE) ** for MNIST digits](https://blog.keras.io/building-autoencoders-in-keras.html) except we will be using Fashion MNIST data
+* Example of encoder network maping inputs to latent vectors:
+
+> x = Input(batch_shape=(batch_size, original_dim))
+> h = Dense(intermediate_dim, activation='relu')(x)
+> z_mean = Dense(latent_dim)(h)
+> z_log_sigma = Dense(latent_dim)(h)
 
 
 ---
@@ -155,3 +171,6 @@ yarn watch
 * [Building Autoencoders in Keras using DL for Python] https://blog.keras.io/building-autoencoders-in-keras.html
 * [Kaggle Data Science competitions with fahsion data set] https://www.kaggle.com/zalando-research/fashionmnist
 * Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
+* Kingma, Diederik P., and Max Welling.
+"Auto-Encoding Variational Bayes."
+https://arxiv.org/abs/1312.6114
