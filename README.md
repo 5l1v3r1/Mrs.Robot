@@ -15,7 +15,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ## Table_of_Contents &#x1F49C;
 
-* [How it works](#How it works-)
+* [How it works](#How_it_works-)
 * [Autoencoders](#Autoencoders-)
 * [Label descriptions](#Label_descriptions-)
 * [Download the fashion data](#Download_the_fashion_data-)
@@ -33,9 +33,9 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
 * **Multi-layer perceptron** based variational autoencoder from [here](https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py)
 
-  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/gender%20bias%20%20.png)
+  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/google_search.png)
 
-*Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**"*
+  *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**"*
 
 ---
 
@@ -43,7 +43,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
  ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/autoencoder.jpg)
 
-*Image. How autoencoders work using the MNIST data set with the number "2"*
+  *Image. How autoencoders work using the MNIST data set with the number "2"*
  
 * **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
@@ -64,7 +64,6 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 7.	Sneaker
 8.	Bag
 9.	Ankle boot
-
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
   
   *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
@@ -91,13 +90,13 @@ npm install
 
 ## Run_the_training_script &#x1F538;
 
-```sh
-yarn train
-```
-
 * Fashion data file is large, can't feed all the data to the model at once due to computer memory limitations. **Data is split into "batches"** 
 * When all batches are fed exactly once, an "epoch" is completed. As training script runs, **preview images afer every epoch will show**
 * At the end of each epoch the preview image should look more and more like an item of clothing
+
+```sh
+yarn train
+```
 
 ---
 
@@ -108,7 +107,7 @@ yarn train
 
 ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/vae_tensorboard.png)
 
-*Image of loss curve from fashion model training*
+  *Image of loss curve from fashion model training*
 
 
 ---
@@ -117,13 +116,11 @@ yarn train
 
 Use `--logDir` flag of `yarn train` command. Log the **batch-by-batch loss values** to a log directory.
 
-For example:
-
 ```sh
 yarn train --logDir /tmp/vae_logs
 ```
 
-Start TensorBoard in a separate terminal:
+Start TensorBoard in a separate terminal. Tensorboard process will print an http:// URL to the console and can be monitored in the browser. 
 
 ```sh
 pip install tensorboard  # Unless you've already installed tensorboard.
@@ -131,9 +128,6 @@ pip install tensorboard  # Unless you've already installed tensorboard.
 
 tensorboard --logdir /tmp/vae_logs
 ```
-
-Tensorboard process will print an http:// URL to the console and can be monitored in the browser. 
-
 
 ---
 
@@ -147,7 +141,7 @@ yarn watch
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/fashion-mnist-vae-scr.png)
 
-*Image of completed training results on fashion MNIST 30x30 grid of small images*
+  *Image of completed training results on fashion MNIST 30x30 grid of small images*
 
 ---
 
