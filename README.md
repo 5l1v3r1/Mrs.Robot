@@ -64,7 +64,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 7.	Sneaker
 8.	Bag
 9.	Ankle boot
-  ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/Plot-of-a-Subset-of-Images-from-the-Fashion-MNIST-Dataset.png)
+  ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/mnist%20labels.png)
   
   *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
   
@@ -102,8 +102,8 @@ yarn train
 
 ## Loss_error_function &#x1F538;
 
-* **Loss function accounts for error**. 
-* The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero.
+* Loss function to account for error in training
+* The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero
 
 ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/fashion-mnist-vae/vae_tensorboard.png)
 
@@ -133,7 +133,7 @@ tensorboard --logdir /tmp/vae_logs
 
 ## Serve_the_model_and_view_the_results &#x1F49C;
 
-Once the training is complete run to serve the model and the web page that goes with it.
+Once training is complete - run to serve the model and the web page that goes with it.
 
 ```sh
 yarn watch
