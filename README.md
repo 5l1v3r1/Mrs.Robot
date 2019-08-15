@@ -66,7 +66,7 @@
 
 ---
 
-## Variational Autoencoder (VAE) Example &#x1F49C:
+## Variational Autoencoder (VAE) Example &#x1F49C;
 
 Example of **encoder network maping inputs to latent vectors**:
 
@@ -108,7 +108,7 @@ Mrs.Robot has the following fashion pieces in her wardrobe:
 
 
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/images/mnist%20labels.png)
-  
+    
    *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
   
 ---
