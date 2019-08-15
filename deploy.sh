@@ -1,31 +1,12 @@
 #!/usr/bin/env bash
-# Copyright 2018 Google LLC. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+
 # =============================================================================
 
-# This script deploys examples to GCP so they can be statically hosted.
+# Deployment script with two options:
+# 1) Can be used to deploy ALL demos --> ./deploy.sh
+# 2) Pass single argument for single demo deployment --> ./deploy.sh fashion-mnist
 #
-# The script can either be used without arguments, which deploys all demos:
-# ./deploy.sh
-# Or you can pass a single argument specifying a single demo to deploy:
-# ./deploy.sh mnist
-#
-# This script assumes that a directory in this repo corresponds to an example.
-#
-# Example directories should have:
-#  - package.json
-#  - `yarn build` script which generates a dist/ folder in the example directory.
+#  - `yarn build` script generates a dist/ folder in the repo directory
 
 if [ -z "$1" ]
   then
