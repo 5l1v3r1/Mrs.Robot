@@ -69,7 +69,7 @@
 
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/images/mnist%20labels.png)
   
-    *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
+   *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
   
 ---
   
