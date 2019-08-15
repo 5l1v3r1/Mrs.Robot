@@ -45,7 +45,7 @@
 
   *Image. How autoencoders work using the MNIST data set with the number "2"*
 
-* "Audoencoding" == **Data compression algorithm** with compression and decompression functions
+* "Autoencoding" == **Data compression algorithm** with compression and decompression functions
 * User defines the parameters in the function using variational autoencoder
 * Self-supervised learning where target models are generated from input data
 * Implemented with **neural networks** - useful for problems in unsupervised learning (no labels)
@@ -56,7 +56,7 @@
 
 * Variational autoencoders are autoencoders, but with more constraints
 * **Generative model** with parameters of a probability distribution modeling the data
-* The encoder, decoder, and VAE are 3 models that share weights. After training the VAE model, **the encoder can be used to generate latent vectors**.
+* The encoder, decoder, and VAE are 3 models that share weights. After training the VAE model, **the encoder can be used to generate latent vectors**
 * [Refer to Keras tutorial for variational autoenconder (MNIST digits)](https://blog.keras.io/building-autoencoders-in-keras.html) except we will be using Fashion data instead :)
 
 ---
@@ -141,8 +141,9 @@ yarn train
 ## Loss_error_function &#x1F49C;
 
 * Mrs.Robot is super picky about her fashion pieces 
-* Loss function to account for error in training
-* The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero
+* **Loss function** to account for **error in training**
+* The loss from a good training run will be approx 40-50 range
+* The loss from an average training run will be close to zero
 
   ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard.png)
 
@@ -163,8 +164,6 @@ Start TensorBoard in a separate terminal to  print an **http:// URL to the conso
 
 ```sh
 pip install tensorboard  # Unless you've already installed tensorboard.
-
-
 tensorboard --logdir /tmp/vae_logs
 ```
 
@@ -172,19 +171,20 @@ tensorboard --logdir /tmp/vae_logs
 
 ## Serve_the_model_and_view_the_results &#x1F49C;
 
-Once training is complete. Run to serve the model and the training web page.
+**VAE is a generative mode**l which means it can be used to **generate new fashion pieces for Mrs.Robot**. This is done by scanning the latent plane, sampling the latent points at regular intervals, to generate the corresponding fashion piece for each point. Run to serve the model and the training web page:
+
 
 ```sh
 yarn watch
 ```
 
-VAE is a generative model which means it can be used to **generate new fashion pieces for Mrs.Robot**. Here we will scan the latent plane, sampling latent points at regular intervals, and generate the corresponding fashion piece for each point. 
 
-Refer to image below for a visualization of the **latent manifold that was "generated"**:
+Refer to image below for a **visualization of the latent manifold** that was **"generated"**:
+
 
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/images/fashion-mnist-vae-scr.png)
 
-  *Image of completed training results on fashion MNIST 30x30 grid of small images*
+  *Image of completed training results on fashion MNIST 30x30 grid of small images for Mrs.Robot*
 
 ---
 
@@ -193,7 +193,7 @@ Refer to image below for a visualization of the **latent manifold that was "gene
 * [Zaiando Research Fashion MNIST data] http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/
 * [Google Scholar - Publications on Fashion MNIST data sets] https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas
 * [Building Autoencoders in Keras using DL for Python] https://blog.keras.io/building-autoencoders-in-keras.html
-* [Kaggle Data Science competitions with fahsion data set] https://www.kaggle.com/zalando-research/fashionmnist
+* [Kaggle Data Science competitions with fashion data set] https://www.kaggle.com/zalando-research/fashionmnist
 * Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
 * Kingma, Diederik P., and Max Welling.
 "Auto-Encoding Variational Bayes."
