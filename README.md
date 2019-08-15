@@ -1,6 +1,6 @@
 # Mrs.Robot Fashion Modelling &#x1F49C;
 
-**Training a variational autoencoder on the Fashion MNIST dataset!**
+**Training a variational autoencoder on the Fashion MNIST dataset**
 
 <div>
   
