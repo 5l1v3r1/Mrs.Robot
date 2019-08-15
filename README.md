@@ -1,5 +1,7 @@
 # Mrs.Robot Fashion Modelling &#x1F49C;
 
+**Training a variational autoencoder on the Fashion MNIST dataset!**
+
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -9,7 +11,6 @@
 
 </div>
 
-Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ---
 
@@ -39,7 +40,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ---
 
-## Autoencoders 
+## Autoencoders &#x1F49C;
 
  ![Autoencoders yay ](https://github.com/lucylow/Mrs.Robot/blob/master/autoencoder.jpg)
 
@@ -52,7 +53,7 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 
 ---
 
-## Label_descriptions &#x1F538;
+## Label_descriptions &#x1F49C;
 
 0.	T-shirt/top
 1.	Trouser
@@ -64,13 +65,15 @@ Training a **variational autoencoder** on the Fashion MNIST dataset.
 7.	Sneaker
 8.	Bag
 9.	Ankle boot
+
+
   ![Plot of subset Images from Fashion MNIST dataset](https://github.com/lucylow/Mrs.Robot/blob/master/mnist%20labels.png)
   
   *Image. The 0 to 9 label descriptions for the Fashion MNIST dataset*
   
 ---
   
-## Prepare_the_node_environment &#x1F538;
+## Prepare_the_node_environment &#x1F49C;
 
 ```sh
 yarn
@@ -88,7 +91,7 @@ npm install
 
 ---
 
-## Run_the_training_script &#x1F538;
+## Run_the_training_script &#x1F49C;
 
 * Fashion data file is large, can't feed all the data to the model at once due to computer memory limitations. **Data is split into "batches"** 
 * When all batches are fed exactly once, an "epoch" is completed. As training script runs, **preview images afer every epoch will show**
@@ -100,7 +103,7 @@ yarn train
 
 ---
 
-## Loss_error_function &#x1F538;
+## Loss_error_function &#x1F49C;
 
 * Loss function to account for error in training
 * The loss from a good training run will be approx 40-50 range. The loss from an average training run will be close to zero
