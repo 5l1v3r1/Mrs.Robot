@@ -85,7 +85,7 @@ Example of **encoder network maping inputs to latent vectors**:
  
  z_log_sigma = Dense(latent_dim)(h)
 ```
-*Sample Code for VAE encoder network.*
+*Sample Code for VAE encoder network*
 
 
 ---
