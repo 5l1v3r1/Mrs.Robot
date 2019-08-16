@@ -145,14 +145,14 @@ yarn train
 
 ## Loss_error_function &#x1F49C;
 
-* Mrs.Robot is super picky about her fashion pieces 
-* **Loss function** to account for **error in training**
+* Mrs.Robot is picky about her fashion pieces. **Loss function** to account for **error in training**
+* Two loss function options. The default binary cross entropy (BCE) or mean squared error (MSE)
 * The loss from a good training run will be approx 40-50 range
 * The loss from an average training run will be close to zero
 
-  ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard.png)
+  ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard2.png)
 
-    *Image of loss curve from fashion model training*
+    *Image of loss curve with the binary cross entropy error function from fashion model training*
 
 
 ---
