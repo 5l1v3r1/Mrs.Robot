@@ -61,7 +61,7 @@
 
   ![Spark Joy!!!](https://github.com/lucylow/Mrs.Robot/blob/master/images/marie_kondo.jpg)
   
-  *Image. Marie Kondo sparking joy with the wonders of variational autoencoders.*
+  *Image. Marie Kondo sparking joy with the wonders of variational autoencoders*
 
 
 ---
@@ -145,21 +145,20 @@ yarn train
 
 ## Loss_error_function &#x1F49C;
 
-* Mrs.Robot is picky about her fashion pieces. **Loss function** to account for **error in training**
-* Two loss function options. The default binary cross entropy (BCE) or mean squared error (MSE)
-* The loss from a good training run will be approx 40-50 range
-* The loss from an average training run will be close to zero
+* **Loss function to account for error in training** since Mrs.Robot is picky about her fashion pieces 
+* Two loss function options: The default **binary cross entropy (BCE)** or **mean squared error (MSE)**
+* The loss from a good training run will be approx 40-50 range whereas an average training run will be close to zero
 
   ![Example loss curve from training](https://github.com/lucylow/Mrs.Robot/blob/master/images/vae_tensorboard2.png)
 
-    *Image of loss curve with the binary cross entropy error function from fashion model training*
+    *Image of loss curve with the binary cross entropy error function*
 
 
 ---
 
 ### TensorBoard_monitoring_model_training &#x1F49C;
 
-Use `--logDir` flag of `yarn train` command. Log the **batch-by-batch loss values** to a log directory.
+Use `--logDir` flag of `yarn train` command. Log the **batch-by-batch loss values** to a log directory
 
 ```sh
 yarn train --logDir /tmp/vae_logs
@@ -168,7 +167,7 @@ yarn train --logDir /tmp/vae_logs
 Start TensorBoard in a separate terminal to  print an **http:// URL to the console**. The training process can then be **monitored in the browser by Mrs.Robot:**
 
 ```sh
-pip install tensorboard  # Unless you've already installed tensorboard.
+pip install tensorboard  # Unless you've already installed tensorboard
 tensorboard --logdir /tmp/vae_logs
 ```
 
