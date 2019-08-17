@@ -1,4 +1,4 @@
-# Mrs.Robot Fashion Modelling
+# Mrs.Robot Fashion Modelling 👩🏻‍🔬
 
 **＊ ✿ ❀ Training a variational autoencoder on the Fashion MNIST dataset ❀ ✿ ＊**
 
@@ -35,7 +35,7 @@
 
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
 
-  *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**"*
+  *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
 
 ---
 
@@ -61,7 +61,7 @@
 
   ![Spark Joy!!!](https://github.com/lucylow/Mrs.Robot/blob/master/images/marie_kondo.jpg)
   
-  *Image. Marie Kondo sparking joy with the wonders of variational autoencoders*
+  *Image. Marie Kondo sparking joy with the wonders of variational autoencoders 👩🏻‍🔬*
 
 
 ---
@@ -175,7 +175,7 @@ tensorboard --logdir /tmp/vae_logs
 
 ## Serve_the_model_and_view_the_results &#x1F49C;
 
-**VAE is a generative mode**l which means it can be used to **generate new fashion pieces for Mrs.Robot**. This is done by scanning the latent plane, sampling the latent points at regular intervals, to generate the corresponding fashion piece for each point. Run to serve the model and the training web page:
+**VAE is a generative mode**l which means it can be used to **generate new fashion pieces for Mrs.Robot**. This is done by scanning the latent plane, sampling the latent points at regular intervals, to generate the corresponding fashion piece for each point. Run to serve the model and the training web page 👩🏻‍🔬:
 
 
 ```sh
