@@ -16,7 +16,7 @@
 
 ## Table_of_Contents &#x1F49C;
 
-* [How it works](#How_it_works-)
+* [Motivation](#Motivation-)
 * [Autoencoders](#Autoencoders-)
 * [Label descriptions](#Label_descriptions-)
 * [Download the fashion data](#Download_the_fashion_data-)
@@ -28,7 +28,7 @@
 
 ---
 
-## How_it_works &#x1F49C;
+## Motivation &#x1F49C;
 
 * **Train a variational autoenconder (VAE) using TensorFlow.js on Node**
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
