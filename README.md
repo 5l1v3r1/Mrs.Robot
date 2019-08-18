@@ -23,7 +23,8 @@
 * [Run the training script](#Run_the_training_script-) 
 * [Loss error function](#Loss_error_function-)
 * [TensorBoard monitoring model training](#TensorBoard_monitoring_model_training-)
-* [Serve the model and view the results](#Serve_the_model_and_view_the_results-)
+* [Model Discussion](#Model_Discussion-)
+* [Conclusion](#Conclusion-)
 * [References](#references-) 
 
 ---
@@ -173,7 +174,7 @@ tensorboard --logdir /tmp/vae_logs
 
 ---
 
-## Serve_the_model_and_view_the_results &#x1F49C;
+## Model_Discussion &#x1F49C;
 
 **VAE is a generative mode**l which means it can be used to **generate new fashion pieces for Mrs.Robot**. This is done by scanning the latent plane, sampling the latent points at regular intervals, to generate the corresponding fashion piece for each point. Run to serve the model and the training web page 👩🏻‍🔬:
 
@@ -189,14 +190,25 @@ Refer to image below for a **visualization of the latent manifold** that was **"
 ![screenshot of results on fashion MNIST. A 30x30 grid of small images](https://github.com/lucylow/Mrs.Robot/blob/master/images/fashion-mnist-vae-scr.png)
 
   *Image of completed training results on fashion MNIST 30x30 grid of small images for Mrs.Robot*
+  
+---
+
+## Conclusion &#x1F49C;
+
+
+Our results show that a **generative model with parameters of a probability distribution** (VAE) is capable of **achieving results on a highly challenging dataset** of over 60,000 fashion set images using machine learning.
+
 
 ---
 
 ## References &#x1F49C;
 * [Tensorflow's tutorial with tf.keras, a high-level API to train Fashion MNIST] https://www.tensorflow.org/tutorials/keras/basic_classification
 * [Zaiando Research Fashion MNIST data] http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/
+* Learning generative visual models from training examples: An
+incremental bayesian approach tested on 101 object categories. 
 * [Google Scholar - Publications on Fashion MNIST data sets] https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas
 * [Building Autoencoders in Keras using DL for Python] https://blog.keras.io/building-autoencoders-in-keras.html
+* L. Fei-Fei, R. Fergus, and P. Perona. Learning generative visual models from few training examples. Computer Vision and Image Understanding. 2007.
 * [Kaggle Data Science competitions with fashion data set] https://www.kaggle.com/zalando-research/fashionmnist
 * Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
 * Kingma, Diederik P., and Max Welling.
