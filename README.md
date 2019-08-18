@@ -32,7 +32,11 @@
 ## Motivation &#x1F49C;
 
 * **Train a variational autoenconder (VAE) using TensorFlow.js on Node**
-* The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset
+* The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset 
+* Technical project requirements
+  * **Tensorflow==1.12.0**
+  * **Keras==2.2.4**
+  * **TensorflowJS==0.6.7**
 
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
 
@@ -168,7 +172,7 @@ yarn train --logDir /tmp/vae_logs
 Start TensorBoard in a separate terminal to  print an **http:// URL to the console**. The training process can then be **monitored in the browser by Mrs.Robot:**
 
 ```sh
-pip install tensorboard  # Unless you've already installed tensorboard
+pip install tensorboard 
 tensorboard --logdir /tmp/vae_logs
 ```
 
