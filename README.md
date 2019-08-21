@@ -32,9 +32,9 @@
 ## Motivation &#x1F49C;
 
 * **Train a variational autoenconder (VAE) using TensorFlow.js on Node with technical requirements:**
-  * **Tensorflow==1.12.0**
-  * **Keras==2.2.4**
-  * **TensorflowJS==0.6.7**
+  * Tensorflow==1.12.0
+  * Keras==2.2.4
+  * TensorflowJS==0.6.7
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset 
 
   ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
