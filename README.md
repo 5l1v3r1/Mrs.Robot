@@ -37,9 +37,9 @@
   * TensorflowJS==0.6.7
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset 
 
- ![Gender bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
+    ![Gender bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
 
-  *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
+    *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
 
 ---
 
