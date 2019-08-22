@@ -37,7 +37,8 @@
   * TensorflowJS==0.6.7
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset 
 
-≈≈≈
+ ![Gender bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
+
   *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
 
 ---
@@ -222,6 +223,4 @@ incremental bayesian approach tested on 101 object categories.
 * L. Fei-Fei, R. Fergus, and P. Perona. Learning generative visual models from few training examples. Computer Vision and Image Understanding. 2007.
 * [Kaggle Data Science competitions with fashion data set] https://www.kaggle.com/zalando-research/fashionmnist
 * Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
-* Kingma, Diederik P., and Max Welling.
-"Auto-Encoding Variational Bayes."
-https://arxiv.org/abs/1312.6114
+* Kingma, Diederik P., and Max Welling. "Auto-Encoding Variational Bayes." https://arxiv.org/abs/1312.6114
