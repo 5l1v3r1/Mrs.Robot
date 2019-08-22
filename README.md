@@ -37,8 +37,7 @@
   * TensorflowJS==0.6.7
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset 
 
-  ![Google bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
-
+≈≈≈
   *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
 
 ---
@@ -174,6 +173,15 @@ Start TensorBoard in a separate terminal to  print an **http:// URL to the conso
 pip install tensorboard 
 tensorboard --logdir /tmp/vae_logs
 ```
+
+![Tensorboard Monitoring](https://github.com/lucylow/Mrs.Robot/blob/master/images/tensorboard%20web%20view.png)
+
+*Image. Tensorboard's monitoring interface.*
+
+![Tensorboard](https://github.com/lucylow/Mrs.Robot/blob/master/images/tensorboard%20curves.png)
+
+*Image. Tensorboard's monitoring interface.*
+
 
 ---
 
