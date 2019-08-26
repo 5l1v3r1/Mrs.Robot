@@ -35,6 +35,8 @@
   * Tensorflow==1.12.0
   * Keras==2.2.4
   * TensorflowJS==0.6.7
+  * AzureML-SDK==1.0.41.
+  
 * The model will be trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset 
 
     ![Gender bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
@@ -119,10 +121,91 @@ Example of **encoder network maping inputs to latent vectors**:
   
 ## Prepare_the_node_environment &#x1F49C;
 
+
 ```sh
 yarn
 # Or
 npm install
+```
+
+----
+
+
+
+## Azure Machine Learning Compute- Train Model in the cloud &#x1F49C;
+* The machine learning model is run on remote compute resources using [Microsoft's Azure ML SDK](https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-train-models-with-aml?WT.mc_id=aisummit-github-amynic). 
+
+
+[Azure SDK for Node.js developers](https://github.com/Azure/azure-sdk-for-node):
+> Machine Learning	npm install azure-arm-machinelearning
+> Machine Learning Compute	npm install azure-arm-machinelearningcompute
+
+
+Connect to Azure "workspace object". Workspace.from_config() reads the file config.json and loads the details into an object named ws:
+```python
+# load workspace configuration from the config.json file in the current folder.
+ws = Workspace.from_config()
+print(ws.name, ws.location, ws.resource_group, sep='\t')
+```
+
+Create an experiment to run on worksplace
+```python
+from azureml.core import Experiment
+experiment_name = 'sklearn-mnist'
+
+exp = Experiment(workspace=ws, name=experiment_name)
+```
+
+Create Azure Machine Learning Compute as the training environment to compute clusters in workspace (super quick 5 minutes)
+
+```python
+from azureml.core.compute import AmlCompute
+from azureml.core.compute import ComputeTarget
+import os
+
+# choose a name for your cluster
+compute_name = os.environ.get("AML_COMPUTE_CLUSTER_NAME", "cpucluster")
+compute_min_nodes = os.environ.get("AML_COMPUTE_CLUSTER_MIN_NODES", 0)
+compute_max_nodes = os.environ.get("AML_COMPUTE_CLUSTER_MAX_NODES", 4)
+
+# This example uses CPU VM. For using GPU VM, set SKU to STANDARD_NC6
+vm_size = os.environ.get("AML_COMPUTE_CLUSTER_SKU", "STANDARD_D2_V2")
+
+
+if compute_name in ws.compute_targets:
+    compute_target = ws.compute_targets[compute_name]
+    if compute_target and type(compute_target) is AmlCompute:
+        print('found compute target. just use it. ' + compute_name)
+else:
+    print('creating a new compute target...')
+    provisioning_config = AmlCompute.provisioning_configuration(vm_size=vm_size,
+                                                                min_nodes=compute_min_nodes,
+                                                                max_nodes=compute_max_nodes)
+
+    # create the cluster
+    compute_target = ComputeTarget.create(
+        ws, compute_name, provisioning_config)
+
+    # can poll for a minimum number of nodes and for a specific timeout.
+    # if no min node count is provided it will use the scale settings for the cluster
+    compute_target.wait_for_completion(
+        show_output=True, min_node_count=None, timeout_in_minutes=20)
+
+    # For a more detailed view of current AmlCompute status, use get_status()
+    print(compute_target.get_status().serialize())
+```
+
+Upload data to the cloud for remote training
+* uploads data from local machine into Azure workslace
+* can use remote compute targets to interact with data 
+* data is backed by Azure Blob storage account
+
+```python
+ds = ws.get_default_datastore()
+print(ds.datastore_type, ds.account_name, ds.container_name)
+
+ds.upload(src_dir=data_folder, target_path='mnist',
+          overwrite=True, show_progress=True)
 ```
 
 ---
@@ -220,6 +303,7 @@ Our results show that a **generative model with parameters of a probability dist
 incremental bayesian approach tested on 101 object categories. 
 * [Google Scholar - Publications on Fashion MNIST data sets] https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas
 * [Building Autoencoders in Keras using DL for Python] https://blog.keras.io/building-autoencoders-in-keras.html
+* Microsoft Azure Train image classification data in cLOUD https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-train-models-with-aml?WT.mc_id=aisummit-github-amynic
 * L. Fei-Fei, R. Fergus, and P. Perona. Learning generative visual models from few training examples. Computer Vision and Image Understanding. 2007.
 * [Kaggle Data Science competitions with fashion data set] https://www.kaggle.com/zalando-research/fashionmnist
 * Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv:1708.07747
