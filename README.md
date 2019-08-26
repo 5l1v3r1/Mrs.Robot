@@ -1,6 +1,6 @@
 # Mrs.Robot Fashion Modelling 👩🏻‍🔬
 
-**＊ ✿ ❀ Training a variational autoencoder on the Fashion MNIST dataset ❀ ✿ ＊**
+**＊ ✿ ❀ Training an Azure-AI powered variational autoencoder on the Fashion MNIST dataset ❀ ✿ ＊**
 
 <div>
   
