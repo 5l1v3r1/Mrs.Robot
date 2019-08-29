@@ -1,6 +1,6 @@
 # Mrs.Robot Fashion Modelling 👩🏻‍🔬
 
-**＊ ✿ ❀ Training an Azure-AI powered variational autoencoder on the Fashion MNIST dataset ❀ ✿ ＊**
+**＊ ✿ ❀ Training an Azure-AI powered variational autoencoder on the Fashion MNIST dataset for [Microsoft's Azure AI Hackathon](https://azureai.devpost.com/)❀ ✿ ＊**
 
 <div>
   
@@ -130,9 +130,13 @@ npm install
 
 ----
 
+## Node.js on Azure
+* Mrs. Robot application built using Node.js is hosted on Azure 
+* For developers, Azure applications can be managed  with VS code (my favorite editor), command line via Azure CLI, and the web browser
+* Allows quick deployment (minutes) of full-stack applications on Linux service in containers using Docker
 
 
-## Azure Machine Learning Compute- Train Model in the cloud &#x1F49C;
+## Azure Machine Learning Training Models in the Cloud &#x1F49C;
 * The machine learning model is run on remote compute resources using [Microsoft's Azure ML SDK](https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-train-models-with-aml?WT.mc_id=aisummit-github-amynic). 
 
 
