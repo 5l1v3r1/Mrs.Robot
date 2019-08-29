@@ -130,13 +130,18 @@ npm install
 
 ----
 
-## Node.js on Azure
-* Mrs. Robot application built using Node.js is hosted on Azure 
-* For developers, Azure applications can be managed  with VS code (my favorite editor), command line via Azure CLI, and the web browser
-* Allows quick deployment (minutes) of full-stack applications on Linux service in containers using Docker
+## Node.js Applications on Microsoft's Azure
+
+* Mrs. Robot application built using Node.js is hosted on Azure with deployments automatically connecting to the github repo and syncing to Azure
+* Applications managed with VS code or web browser
+* Quick deployment of full-stack applications on Linux service (ex. Docker container)
+* Video tutorial "Build and deploy Node.js and React apps with Visual Studio Code, Azure App Service and Cosmos DB" https://www.youtube.com/watch?v=mvW0tIsdnHI&list=PLLasX02E8BPBsxTwjnhjcPYHWAbzUZvf7
+
+---
 
 
 ## Azure Machine Learning Training Models in the Cloud &#x1F49C;
+
 * The machine learning model is run on remote compute resources using [Microsoft's Azure ML SDK](https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-train-models-with-aml?WT.mc_id=aisummit-github-amynic). 
 
 
