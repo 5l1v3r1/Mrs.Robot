@@ -130,7 +130,7 @@ npm install
 
 ----
 
-## Node.js Applications on Microsoft's Azure
+## Node.js Applications on Microsoft's Azure &#x1F49C;
 
 * Mrs. Robot application built using Node.js is hosted on Azure with deployments automatically connecting to the github repo and syncing to Azure
 * Applications managed with VS code or web browser
