@@ -140,22 +140,13 @@ npm install
 ---
 
 
-## Azure Machine Learning Training Models in the Cloud &#x1F49C;
+## Azure Training ML Models in the Cloud &#x1F49C;
 
-* The machine learning model is run on remote compute resources using [Microsoft's Azure ML SDK](https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-train-models-with-aml?WT.mc_id=aisummit-github-amynic). 
-
-
-[Azure SDK for Node.js developers](https://github.com/Azure/azure-sdk-for-node):
-> Machine Learning	npm install azure-arm-machinelearning
-> Machine Learning Compute	npm install azure-arm-machinelearningcompute
-
-
-Connect to Azure "workspace object". Workspace.from_config() reads the file config.json and loads the details into an object named ws:
-```python
-# load workspace configuration from the config.json file in the current folder.
-ws = Workspace.from_config()
-print(ws.name, ws.location, ws.resource_group, sep='\t')
-```
+* The machine learning model is run on remote compute resources using [Microsoft's Azure ML SDK](https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-train-models-with-aml?WT.mc_id=aisummit-github-amynic)
+* [Azure SDK for Node.js developers](https://github.com/Azure/azure-sdk-for-node):
+  * Machine Learning	npm install azure-arm-machinelearning
+  * Machine Learning Compute	npm install azure-arm-machinelearningcompute
+* Connect to Azure's "workspace object"
 
 ---
 
