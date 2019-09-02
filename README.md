@@ -41,7 +41,7 @@
 
     ![Gender bias](https://github.com/lucylow/Mrs.Robot/blob/master/images/google_search.png)
 
-    *Image. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
+    *Image. Gender Bias. Google Search's auto suggestions when user types in "**How to get my daughter into...**" 👩🏻‍*
 
 ---
 
