@@ -2,6 +2,7 @@
 
 **＊ ✿ ❀ Training a variational autoencoder on the Fashion MNIST dataset ❀ ✿ ＊**
 
+
 <div>
   
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
